@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&family=Kosugi&family=Suez+One&display=swap');
+
+body{
+    margin: 0;
+}
+
+h2{
+    padding: 5px;
+    text-align: center;
+    font-family: 'Suez One', serif;
+    text-shadow: 2px 2px rgb(217, 217, 217);
+}
+.content_container{
+    height: 100vh;
+    /* background-color: rgb(233, 233, 233); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(255, 133, 133), rgb(121, 228, 255));
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.bg_container img{
+    margin: auto;
+    width: 100%;
+    height: 150px;
+}
+
+.form_container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.input_container{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 900,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+#arrow_down{
+    display: none;
+}
+
+.result_container{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.select_field{
+    padding: 20px 5px 20px 5px;
+    font-size: 15px;
+    font-family: 'Kosugi', sans-serif;
+    font-weight: 800;
+}
+
+.input_field{
+    padding: 20px 5px 20px 5px;
+    font-size: 15px;
+    font-family: 'Kosugi', sans-serif;
+    font-weight: 800;
+}
+
+#result_num{
+    background-color: white;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 640px)
+{
+    .form_container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 900,
+        'GRAD' 0,
+        'opsz' 48
+    }
+
+    #arrow_down{
+        display: block;
+    }
+    
+    #arrow_right{
+        display: none;
+    }
+    
+}

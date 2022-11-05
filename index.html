@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="post_center">
+        <div class="content_container">
+            <h2>Temperature Converter with Javascript</h2>
+            <div class="header">
+                <div class="bg_container">
+                    <img src="bg/bg.gif">
+                </div>
+            </div>
+            <form action="#" method="" class="form_container">
+                <div class="input_container">
+                    <select class="select_field" id="temp_input">
+                        <option value="celsius" selected>Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="rankine">Rankine</option>
+                    </select>
+                    <input type="number" class="input_field" id="input_num" placeholder="0" onInput="tempConversion()">
+                </div>
+                <span id="arrow_right" class="material-symbols-outlined">arrow_right_alt</span>
+                <span id="arrow_down" class="material-symbols-outlined">arrow_downward</span>
+                <div class="result_container">
+                    <select class="select_field" id="temp_result" onChange="tempConversion()">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="rankine">Rankine</option>
+                    </select>
+                    <input type="text" class="input_field" id="result_num" placeholder="0" disabled>
+                </div>
+            </form>
+        </div>  
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
